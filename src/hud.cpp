@@ -32,7 +32,7 @@ HUD::HUD() : gameOver(false) {
     gameOverText.setString("GAME OVER");
     sf::FloatRect b = gameOverText.getLocalBounds();
     gameOverText.setOrigin(b.width / 2.0f, b.height / 2.0f);
-    gameOverText.setPosition(640.f, 360.f); // środek okna 1280x720
+    gameOverText.setPosition(640.f, 360.f);
 
     highScoreTitle.setFont(font);
     highScoreTitle.setCharacterSize(40);
@@ -40,7 +40,7 @@ HUD::HUD() : gameOver(false) {
     highScoreTitle.setString("TOP 5 WYNIKOW:");
     sf::FloatRect b2 = highScoreTitle.getLocalBounds();
     highScoreTitle.setOrigin(b2.width / 2.0f, b2.height / 2.0f);
-    highScoreTitle.setPosition(640.f, 400.f); // Pod napisem Game Over
+    highScoreTitle.setPosition(640.f, 400.f);
 }
 
 void HUD::setScore(int score) {

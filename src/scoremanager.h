@@ -2,7 +2,6 @@
 #include <vector>
 #include <string>
 
-// Struktura przechowujaca pojedynczy wynik
 struct ScoreEntry {
     std::string name;
     int score;
@@ -12,7 +11,7 @@ class ScoreManager {
 private:
     std::vector<ScoreEntry> highScores;
     std::string filename;
-    int maxScores; // Ile wynikow trzymamy (np. TOP 5)
+    int maxScores;
 
 public:
     ScoreManager(const std::string& file = "scores.txt", int max = 5);

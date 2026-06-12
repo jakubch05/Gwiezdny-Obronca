@@ -15,7 +15,6 @@ Menu::Menu(float width, float height) {
     title.setOrigin(titleBounds.width / 2.0f, titleBounds.height / 2.0f);
     title.setPosition(width / 2.0f, height / 4.0f);
 
-    // Opcje Menu
     std::vector<std::string> options = {"Graj", "Wczytaj z zapisu", "Wyjscie"};
     for (size_t i = 0; i < options.size(); i++) {
         sf::Text text;
@@ -27,7 +26,6 @@ Menu::Menu(float width, float height) {
         text.setOrigin(bounds.width / 2.0f, bounds.height / 2.0f);
         text.setPosition(width / 2.0f, height / 2.0f + i * 60.0f);
 
-        // Domyslnie pierwsza opcja jest podswietlona (czerwona)
         if (i == 0) text.setFillColor(sf::Color::Red);
         else text.setFillColor(sf::Color::White);
 

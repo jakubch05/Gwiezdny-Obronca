@@ -1,9 +1,7 @@
-// Bonus.h
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "gameobject.h"
 
-// Bonus (udko) spadajace po zestrzeleniu kurczaka. Obraca sie podczas opadania.
 class Bonus : public GameObject {
 private:
     sf::Sprite sprite;

@@ -1,4 +1,3 @@
-// Egg.cpp
 #include "egg.h"
 
 Egg::Egg(float x, float y)
@@ -10,7 +9,7 @@ Egg::Egg(float x, float y)
     shape.setOutlineThickness(1.f);
     shape.setOrigin(8.f, 8.f);
 
-    rotationSpeed = 180.f; // obrot 180 stopni/s podczas spadania (animacja)
+    rotationSpeed = 180.f;
 
     syncVisual();
 }

@@ -16,13 +16,11 @@ void ScoreManager::loadScores() {
     if (file.is_open()) {
         std::string name;
         int score;
-        // Wczytujemy pary (Imie Wynik) dopoki nie skoncza sie w pliku
         while (file >> name >> score) {
             highScores.push_back({name, score});
         }
         file.close();
     } else {
-        // Jesli plik nie istnieje, tworzymy puste wpisy
         for(int i=0; i<maxScores; i++) {
             highScores.push_back({"---", 0});
         }
@@ -42,20 +40,15 @@ void ScoreManager::saveScores() const {
 }
 
 void ScoreManager::addScore(const std::string& playerName, int score) {
-    // Dodajemy nowy wynik na koniec listy
     highScores.push_back({playerName, score});
 
-    // Sortujemy malejaco (od najwiekszego do najmniejszego wyniku)
     std::sort(highScores.begin(), highScores.end(), [](const ScoreEntry& a, const ScoreEntry& b) {
         return a.score > b.score;
     });
 
-    // Jesli lista jest dluzsza niz dozwolona liczba wpisow, ucinamy ja
     if (highScores.size() > static_cast<size_t>(maxScores)) {
         highScores.resize(maxScores);
     }
-
-    // Zapisujemy nowy ranking do pliku
     saveScores();
 }
 

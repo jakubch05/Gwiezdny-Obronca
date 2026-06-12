@@ -7,10 +7,9 @@ Bonus::Bonus(sf::Texture& texture, float x, float y)
     sprite.setTexture(texture);
     sprite.setScale(0.03f, 0.03f);
 
-    velocity = sf::Vector2f(0.f, 150.f); // 150 px/s w dol
-    rotationSpeed = 90.f;                 // 90 stopni/s - lekki obrot (animacja)
+    velocity = sf::Vector2f(0.f, 150.f);
+    rotationSpeed = 90.f;
 
-    // origin na srodku - obrot bedzie wokol centrum sprite'a
     sf::FloatRect b = sprite.getLocalBounds();
     sprite.setOrigin(b.width / 2.0f, b.height / 2.0f);
 
@@ -23,7 +22,7 @@ void Bonus::syncVisual() {
 }
 
 void Bonus::update(float deltaTime) {
-    GameObject::update(deltaTime); // ruch + obrot + syncVisual()
+    GameObject::update(deltaTime);
 
     if (position.y > 770.f) {
         kill();

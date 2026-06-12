@@ -1,6 +1,5 @@
 #pragma once
 
-// Parametryzacja gry - spelnienie punktu 15
 struct GameConfig {
     static constexpr int WINDOW_WIDTH = 1280;
     static constexpr int WINDOW_HEIGHT = 720;

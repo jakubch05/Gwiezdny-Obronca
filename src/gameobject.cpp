@@ -39,5 +39,5 @@ void GameObject::kill() {
 void GameObject::setPosition(float x, float y) {
     position.x = x;
     position.y = y;
-    syncVisual(); // Od razu aktualizujemy pozycję na ekranie
+    syncVisual();
 }

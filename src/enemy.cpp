@@ -1,4 +1,3 @@
-// Enemy.cpp
 #include "enemy.h"
 #include <cstdlib>
 
@@ -15,7 +14,6 @@ void Enemy::syncVisual() {
 }
 
 void Enemy::update(float deltaTime) {
-    // velocity.x jest ustawiane z zewnatrz przez formacje w main.cpp
     GameObject::update(deltaTime);
 }
 
@@ -28,7 +26,6 @@ sf::FloatRect Enemy::getBounds() const {
 }
 
 std::unique_ptr<Egg> Enemy::tryDropEgg() const {
-    // ~1 jajko na sekunde na cala 48-osobowa formacje przy 60 FPS
     if (rand() % 3000 == 0) {
         sf::FloatRect b = getBounds();
         return std::make_unique<Egg>(position.x + b.width / 2.0f, position.y + b.height);

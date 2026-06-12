@@ -1,0 +1,5 @@
+Gracz1 23000
+Gracz1 10030
+Gracz 8100
+Gracz1 2550
+--- 0
