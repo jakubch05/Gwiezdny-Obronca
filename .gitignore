@@ -1,0 +1,16 @@
+# Ignoruj foldery budowania Qt Creatora
+build/
+build-*/
+out/
+
+# Ignoruj pliki tymczasowe użytkownika Qt
+*.user
+*.user.*
+
+# Ignoruj skompilowane pliki binarne (BARDZO WAŻNE!)
+*.exe
+*.dll
+*.so
+*.a
+*.o
+*.obj
