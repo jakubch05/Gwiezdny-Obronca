@@ -4,18 +4,18 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        bonus.cpp \
-        boss.cpp \
-        egg.cpp \
-        enemy.cpp \
-        gameobject.cpp \
-        hud.cpp \
-        laser.cpp \
-        main.cpp \
-        menu.cpp \
-        player.cpp \
-        projectile.cpp \
-        scoremanager.cpp
+        src/bonus.cpp \
+        src/boss.cpp \
+        src/egg.cpp \
+        src/enemy.cpp \
+        src/gameobject.cpp \
+        src/hud.cpp \
+        src/laser.cpp \
+        src/main.cpp \
+        src/menu.cpp \
+        src/player.cpp \
+        src/projectile.cpp \
+        src/scoremanager.cpp
         INCLUDEPATH += "C:/SFML-2.5.1/include"
 
         LIBS += -L"C:/SFML-2.5.1/lib"
@@ -26,15 +26,15 @@ SOURCES += \
         }
 
 HEADERS += \
-    GameConfig.h \
-    bonus.h \
-    boss.h \
-    egg.h \
-    enemy.h \
-    gameobject.h \
-    hud.h \
-    laser.h \
-    menu.h \
-    player.h \
-    projectile.h \
-    scoremanager.h
+    src/GameConfig.h \
+    src/bonus.h \
+    src/boss.h \
+    src/egg.h \
+    src/enemy.h \
+    src/gameobject.h \
+    src/hud.h \
+    src/laser.h \
+    src/menu.h \
+    src/player.h \
+    src/projectile.h \
+    src/scoremanager.h
